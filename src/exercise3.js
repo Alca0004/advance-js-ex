@@ -6,3 +6,24 @@
 // sucesivamente y actualiza tu función para que aplique las clases.
 // Nota: para definir las clases CSS que va a tener un elemento en Javascript usa la propiedad “className”
 // de dicho elemento asignándole una cadena de texto con el nombre de las clases.
+export function exercise3() {
+  // Select the container where the squares will be added
+  const container = document.getElementById("exercise3-container");
+
+  // Clear any existing content in the container
+  container.innerHTML = "";
+
+  // Number of squares to create
+  const numberOfSquares = 4;
+
+  // Loop to create squares
+  for (let i = 0; i < numberOfSquares; i++) {
+    const square = document.createElement("div");
+
+    // Assign the "square" class and alternating color classes
+    square.className = `square color${(i % 3) + 1}`;
+
+    // Append the square to the container
+    container.appendChild(square);
+  }
+}

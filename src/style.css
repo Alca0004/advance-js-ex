@@ -1,50 +1,58 @@
-/* General Styles */
+/* General styles */
 body {
+  background-color: #f5eedc; /* Dark Grey */
+  color: #27548a; /* Light Grey for text */
   font-family: Arial, sans-serif;
+  margin: 0;
   padding: 20px;
-  background-color: #f4f4f4;
 }
 
-/* Style the sections */
-section {
-  margin-bottom: 40px;
+/* Style for the main div */
+#content-div {
+  background-color: #2a2a2a; /* Slightly lighter grey */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.3); /* Dark orange glow */
 }
 
-/* Style the paragraphs */
-#unique-paragraph {
-  background-color: #f9f9f9;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-/* Style for multiple paragraphs */
-.multiple {
-  background-color: #ddd;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
-}
-
-/* Style the content container */
-#content-container {
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-
-/* Style the buttons */
+/* Buttons */
 button {
+  background-color: #dda853; /* Dark orange */
+  color: #183b4e;
   padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
+  font-size: 16px;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #ff5500; /* Slightly brighter orange */
+}
+
+/* Paragraphs */
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.square {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.color1 {
+  background-color: #3b78d7; /* Blue */
+}
+
+.color2 {
+  background-color: #d73b78; /* Pink */
+}
+
+.color3 {
+  background-color: #78d73b; /* Green */
 }

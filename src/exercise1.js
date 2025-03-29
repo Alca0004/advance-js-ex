@@ -4,16 +4,20 @@
 // En el archivo HTML anterior crea varios elementos con la misma clase.
 // Ahora utiliza document.querySelectorAll() para acceder a todos los elementos con dicha clase y muestra
 // su contenido en la consola.
-// exercise1.js
-// exercise1.js
 
 // Exercise 1 function
+// exercise1.js
+
 export function exercise1() {
+  /// Accessing the unique ID
   const uniqueParagraph = document.getElementById("unique-paragraph");
   console.log("Unique paragraph content:", uniqueParagraph.textContent);
-}
+  // Acesss all the paragraphs with the same class
+  const multipleParagraphs = document.querySelectorAll(".multiple");
 
-// Add an event listener to the button to trigger exercise1 when clicked
-// Add event listener to the button
-const button = document.getElementById("exercise1-button");
-button.addEventListener("click", exercise1);
+  // Loops through each element and finds them all, using the index + 1 so the count starts at 1
+
+  multipleParagraphs.forEach((paragraph, index) => {
+    console.log(`Paragraph ${index + 1}`, paragraph.textContent);
+  });
+}

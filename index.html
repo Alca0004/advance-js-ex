@@ -4,22 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multiple Exercises</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/src/style.css" />
     <!-- Optional: Link to external CSS -->
   </head>
   <body>
+    <h1>DOM Exercises</h1>
+    <h2>Ejercicio 1. Acceso al DOM. Crea un archivo HTML con un párrafo con un id único. Utiliza document.getElementById() para acceder al párrafo y muestra su contenido en la consola. En el archivo HTML anterior crea varios elementos con la misma clase. Ahora utiliza document.querySelectorAll() para acceder a todos los elementos con dicha clase y muestra su contenido en la consola.</h2>
     <!-- Unique paragraph for Exercise 1 -->
     <p id="unique-paragraph">This is the unique paragraph content for Exercise 1.</p>
+    <!-- Multiple paragraphs with the same class -->
+    <p class="multiple">This is the first paragraph with the 'multiple' class.</p>
+    <p class="multiple">This is the second paragraph with the 'multiple' class.</p>
+    <p class="multiple">This is the third paragraph with the 'multiple' class.</p>
 
     <!-- Button for Exercise 1 -->
     <button id="exercise1-button">Run Exercise 1</button>
 
-    <!-- Div for Exercise 2 (to be populated by JS) -->
+    <h2>Ejercicio 2. Cambiar el contenido de un elemento del DOM. Crea un archivo HTML con un div vacío. Escribe una función que utilice document.querySelectorAll() para acceder al elemento del div y añada el siguiente contenido: un párrafo con un ‘lorem ipsum…’ y debajo un botón con el texto ‘Continuar’.</h2>
+    <!-- Div for Exercise 2  -->
     <div id="exercise2-container"></div>
 
     <!-- Button for Exercise 2 -->
     <button id="exercise2-button">Load Content for Exercise 2</button>
+    <!--Exercise 3 -->
+    <h2>Ejercicio 3. Crea una web en HTML que muestre 4 cuadrados rellenos de color hex. #3b78d7. Usando CSS centrar los cuadrados horizontal y verticalmente con una separación de 10px. Una vez esté listo el código CSS elimina los elementos HTML y crea una función que le pasemos el número de cuadrados y añada todos los elementos HTML necesarios para mostrar el mismo resultado que antes. Ahora crea las clases necesarias en CSS para que los cuadrados alternen 3 colores sucesivamente y actualiza tu función para que aplique las clases. Nota: para definir las clases CSS que va a tener un elemento en Javascript usa la propiedad “className” de dicho elemento asignándole una cadena de texto con el nombre de las clases.</h2>
+    <!-- Div for exerc 3 -->
+    <div id="exercise3-container"></div>
+    <!-- button for exer 3 -->
+    <button id="exercise3-button">Run Exercise 3</button>
 
-    <script type="module" src="/src/main.js" defer></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
